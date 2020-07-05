@@ -1,0 +1,106 @@
+.contact {
+
+    padding-top: 20px;
+    height: 100vh;
+    border-bottom: 7px solid #ff9b08;
+    width: 90%;
+    h1 {
+        @extend %h1;
+    }
+    p {
+        @extend %p;
+        width: 40%;
+    }
+
+    .information {
+        padding: 30px;
+        box-shadow: 0px 2px 15px rgba($color: #000000, $alpha: 0.1);
+        margin-top: 20px;
+        .info {
+            i {
+                padding: 10px;
+                background-color: #fff6e8;
+                color: $main-color;
+                font-size: 20px;
+                margin-right: 5px;
+                border-radius: 50%;
+                width: 44px;
+                height: 44px;
+                display: flex;
+                float: left;
+                justify-content: center;
+                align-items: center;
+                transition: $tran;
+            }
+            h4 {
+                font-family: $font4;
+                font-weight: 600;
+                font-size: 16px;
+                display: inline-block;
+                color: #000;
+            }
+            p {
+                font-family: $font4;
+                font-size: 14px;
+                text-align: left;
+                font-weight: 400;
+                padding: 0px 0px 0px 50px;
+                margin: 0;
+                width: 100%;
+                color: #7a7368;
+                
+            }
+            &:hover {
+                i {
+                    background-color: $main-color;
+                    color: #FFF;
+                }
+            }
+        }
+    }
+    .us {
+        padding: 30px 30px 10px;
+        box-shadow: 0px 2px 24px rgba($color: #000000, $alpha: 0.12);
+        background: #FFF;
+        
+        input {
+            margin: 0;
+            padding: 22px 15px;
+            margin-top: 10px;
+        }
+        textarea {
+            width: 100%;
+            height: 120px;
+            border: 0;
+            margin-top: 10px;
+            border: 1px solid #ced4da;
+        }
+        .send {
+            display: block;
+            width: 100%;
+            text-align: center;
+        button {
+            text-align: center;
+            margin-top: 10px;
+            width: 100%;
+            a {
+                background-color: #ff9b08;
+                color: #FFF;
+                font-size: 18px;
+                font-family: $font4;
+                padding: 8px 40px; 
+                transition: $tran;
+                width: 100%;
+                display: inline-block;
+
+                &:hover {
+                    color: #FFF;
+                    text-decoration: none;
+                    background-color: $main-color;
+                }
+            }
+        }
+        }
+        
+    }
+}

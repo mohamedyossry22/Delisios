@@ -1,0 +1,58 @@
+.book {
+    padding: 50px 0px 0px;
+    border-bottom: 7px solid #ff9b08;
+    background-color: #FFF;
+    height: 100vh ;
+    width: 90%;
+    h1 {
+        @extend %h1;
+    }
+    p {
+        @extend %p;
+        width: 40%;
+    }
+    .booking {
+        padding: 40px;
+        box-shadow: 0px 5px 15px rgba($color: #000000, $alpha: 0.2);
+        margin-top: 40px;
+        .col-lg-4 , .col-12  {
+            padding: 7px;
+        }
+        input {
+            margin: 0;
+            padding: 22px 15px;
+            margin-top: 10px;
+        }
+        textarea {
+            width: 100%;
+            height: 120px;
+            border: 0;
+            margin-top: 10px;
+            border: 1px solid #ced4da;
+        }
+        .send {
+            display: block;
+            width: 100%;
+            text-align: center;
+        button {
+            text-align: center;
+            margin-top: 10px;
+            a {
+                background-color: #ff9b08;
+                color: #FFF;
+                font-size: 20px;
+                font-family: $font4;
+                padding: 10px 50px; 
+                border-radius: 50px;
+                transition: $tran;
+                &:hover {
+                    color: #FFF;
+                    text-decoration: none;
+                    background-color: $main-color;
+                }
+            }
+        }
+        }
+        
+    }
+}

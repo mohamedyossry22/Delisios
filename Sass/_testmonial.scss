@@ -1,0 +1,63 @@
+.testmo {
+    background-image: url("../img/testimonials-bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    overflow: hidden;
+    clear: both;
+    border-bottom: 7px solid #ff9b08;
+    text-align: center;
+    .overlay {
+        background-color: rgba($color: #000, $alpha: 0.7);
+        height: 700px;
+        width: 100%;
+        z-index: 2;
+        padding: 100px 0;
+        .comment  {
+            color: #FFF;
+            img {
+                width: 10%;
+                border-radius: 50%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                border: 7px solid rgba(255, 255, 255, 0.15);
+            }
+            h3 {
+                font-family: $font4;
+                font-weight: 700;
+                font-size: 26px;
+            }
+            h5 {
+                font-family: $font4;
+                font-weight: 700;
+                font-size: 16px;
+                color: #aaa;
+            }
+            ul {
+                margin-top: 10px;
+                li {
+                    display: inline-block;
+                    i {
+                        color: $main-color;
+                    }
+                }
+            }
+            p {
+                width: 80%;
+                font-style: italic;
+                margin: 0 auto 15px auto;
+                color: #eee;
+                margin: 0 auto;
+                font-size: 18px;
+                margin-bottom: 50px;
+                i {
+                    font-size: 26px;
+                    padding: 10px;
+                    color: rgba($color: #FFF, $alpha: 0.4);
+                }
+            }
+        }
+    }
+}
